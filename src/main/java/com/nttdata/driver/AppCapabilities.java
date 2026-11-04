@@ -76,16 +76,36 @@ public final class AppCapabilities {
         options.setUdid(getRequired("udid"));
         options.setDeviceName(getRequired("deviceName"));
         options.setPlatformVersion(getRequired("platformVersion"));
-        options.setApp(getRequired("app"));
+
+        //options.setApp(getRequired("app"));
+
+        // Validamos la propiedad app
+        String appPath = getRequired("app");
+        boolean noReset = Boolean.parseBoolean(properties.getProperty("noReset", "true"));
+
+        // Si noReset es falso enviamos el APK; si es true, la app ya vive en el emulador y evitamos el ADB de Appium
+        if (!noReset) {
+            options.setApp(appPath);
+        }
+
         options.setAppPackage(getRequired("appPackage"));
-        options.setAppActivity(getRequired("appActivity"));
+        //options.setAppActivity(getRequired("appActivity"));
+
+        // Hacemos que la propiedad 'appActivity' sea opcional
+        String appActivity = properties.getProperty("appActivity");
+        if (appActivity != null && !appActivity.trim().isEmpty()) {
+            options.setAppActivity(appActivity);
+        }
+
         options.setNoReset(Boolean.parseBoolean(properties.getProperty("noReset", "true")));
         options.setAutoGrantPermissions(Boolean.parseBoolean(properties.getProperty("autoGrantPermissions", "true")));
 
-        options.setCapability("appium:forceAppLaunch", true);
-        options.setCapability("appium:settings[waitForIdleTimeout]", 1000);
+        options.setCapability("appium:autoLaunch", false);
+        options.setCapability("appium:forceAppLaunch", false);
+        options.setCapability("appium:enforceAppInstall", false);
         options.setCapability("appium:disableWindowAnimation", true);
         options.setCapability("appium:skipLogcatCapture", true);
+        options.setCapability("appium:settings[waitForIdleTimeout]", 1000);
 
         long timeoutSeconds = Long.parseLong(properties.getProperty("newCommandTimeoutSeconds", "300"));
         options.setNewCommandTimeout(Duration.ofSeconds(timeoutSeconds));

@@ -57,6 +57,8 @@ public final class AppiumDriverManager {
                     appCapabilities.toUiAutomator2Options()
             );
 
+            //Activar la app de forma segura tras iniciar la sesion
+            driver.activateApp(appCapabilities.getAppPackage());
             System.out.println("Sesion Appium creada: " + driver.getSessionId());
 
         } catch (MalformedURLException e) {

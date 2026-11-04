@@ -32,8 +32,6 @@ import java.util.Properties;
  */
 public class AppConfigScreen {
 
-    // El driver es estatico: solo existe UNA sesion de Appium activa
-    // a la vez, sin importar cuantas Screens se usen despues.
     private static AndroidDriver driver;
 
     /**
@@ -43,8 +41,8 @@ public class AppConfigScreen {
      * @param archivoConfiguracion nombre del archivo .properties dentro de
      *                              src/test/resources/config, ej: "saucelabs.properties"
      */
-    public void iniciarAplicacion(String archivoConfiguracion) {
 
+    public void iniciarAplicacion(String archivoConfiguracion) {
         if (driver != null) {
             System.out.println("[AppConfigScreen] Ya existe una sesion Appium activa, se reutiliza.");
             return;
@@ -151,25 +149,49 @@ public class AppConfigScreen {
         options.setUdid(obtenerObligatorio(properties, "udid"));
         options.setDeviceName(obtenerObligatorio(properties, "deviceName"));
         options.setPlatformVersion(obtenerObligatorio(properties, "platformVersion"));
-        options.setApp(obtenerObligatorio(properties, "app"));
+
+        //options.setApp(obtenerObligatorio(properties, "app"));
+        // Aplicación instalada en el emulador
         options.setAppPackage(obtenerObligatorio(properties, "appPackage"));
         options.setAppActivity(obtenerObligatorio(properties, "appActivity"));
-        options.setNoReset(Boolean.parseBoolean(properties.getProperty("noReset", "true")));
+        options.setNoReset(Boolean.parseBoolean(properties.getProperty("noReset", "false")));
         options.setAutoGrantPermissions(Boolean.parseBoolean(properties.getProperty("autoGrantPermissions", "true")));
 
+        // Capabilities para Appium
+        options.setCapability("appium:autoLaunch", true);
         options.setCapability("appium:forceAppLaunch", true);
-        options.setCapability("appium:settings[waitForIdleTimeout]", 1000);
+        options.setCapability("appium:enforceAppInstall", false);
         options.setCapability("appium:disableWindowAnimation", true);
         options.setCapability("appium:skipLogcatCapture", true);
+        options.setCapability("appium:settings[waitForIdleTimeout]", 1000);
 
-        long timeoutSeconds = Long.parseLong(properties.getProperty("newCommandTimeoutSeconds", "300"));
+        long timeoutSeconds = Long.parseLong(
+                properties.getProperty("newCommandTimeoutSeconds", "300")
+        );
+
         options.setNewCommandTimeout(Duration.ofSeconds(timeoutSeconds));
 
         return options;
     }
 
+    /** Limpiar datos de la App */
+    public void limpiarEstadoApp(String appId) {
+        AndroidDriver d = getDriver();
+        d.terminateApp(appId);
+        d.executeScript("mobile: clearApp", Map.of("appId", appId));
+        d.activateApp(appId);
+    }
+
     private String obtenerObligatorio(Properties properties, String key) {
         String value = properties.getProperty(key);
         return Objects.requireNonNull(value, "[AppConfigScreen] Falta la propiedad obligatoria '" + key + "'");
+    }
+
+    public static void cerrarDriver() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+            System.out.println("Driver cerrado correctamente.");
+        }
     }
 }

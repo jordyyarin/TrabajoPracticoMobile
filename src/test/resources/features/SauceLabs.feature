@@ -1,15 +1,15 @@
-# language: es
-Característica: Inicio de sesion en Sauce Labs Sample App
+@RegresionTienda @Carrito
+Feature: Validación del carrito de compras en la tienda online
 
-  Como usuario de la app movil de Sauce Labs
-  Quiero iniciar sesion con credenciales validas
-  Para acceder al catalogo de productos
+  Scenario Outline: Validar la adición y actualización del carrito de compras
+    Given estoy en la aplicación de SauceLabs
+    And valido que carguen correctamente los productos en la galeria
+    When agrego <UNIDADES> del siguiente producto "<PRODUCTO>"
+    Then valido el carrito de compra actualice correctamente
+    And cierro el aplicativo "com.saucelabs.mydemoapp.android"
 
-  @SauceLabsLogin @Smoke
-  Escenario: Login exitoso con credenciales validas
-    Dado ingreso al aplicativo "saucelabs"
-    Cuando ingreso el usuario "standard_user"
-    Y ingreso la clave "secret_sauce"
-    Y hago clic en LOGIN
-    Entonces valido el login OK
-    Y cierro el aplicativo "com.swaglabsmobileapp"
+    Examples:
+      | PRODUCTO                  | UNIDADES |
+      | Sauce Labs Backpack       | 1        |
+      | Sauce Labs Bolt T-Shirt   | 1        |
+      | Sauce Labs Bike Light     | 2        |

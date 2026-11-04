@@ -7,27 +7,27 @@ Automation Team / Con fines educativos — automatización mobile Android con
 
 ## 1. Arquitectura del proyecto
 
-```
+```text
 src/main/java/com/nttdata/
 ├── screens/
 │   ├── AppConfigScreen.java       → UNICA clase que levanta/cierra la app (cualquier app)
-│   └── SauceLabsLoginScreen.java  → Solo interaccion con la pantalla de login de Sauce Labs
+│   └── TiendaScreen.java          → Interacción con la galería, detalle de productos y carrito
 ├── steps/
-│   ├── AppConfigSteps.java        → Caso de uso generico: iniciar / cerrar / screenshot
-│   └── SauceLabsLoginSteps.java   → Caso de uso: escribir usuario, clave, click login, validar
+│   ├── AppConfigSteps.java        → Caso de uso genérico: iniciar / cerrar / screenshot
+│   └── TiendaSteps.java           → Caso de uso de la tienda: selección de productos y unidades
 └── support/
     └── ScreenshotAttacher.java    → Utilidad para adjuntar evidencias a Cucumber
 
 src/test/java/com/nttdata/
 ├── stepsdefinitions/
-│   ├── AppConfigStepsDefs.java    → Step GENERICO: "ingreso al aplicativo" / "cierro el aplicativo"
-│   └── SauceLabsStepDefs.java     → Steps especificos del login (usuario, clave, LOGIN, validar)
+│   ├── AppConfigStepsDefs.java    → Step GENÉRICO: "ingreso al aplicativo" / "cierro el aplicativo"
+│   └── TiendaStepDefs.java        → Steps específicos del flujo de compras en la tienda
 ├── hooks/Hooks.java                → @Before / @After globales (logs + screenshot final)
 └── runners/CucumberTestSuite.java → Runner JUnit + Cucumber
 
 src/test/resources/
 ├── config/
-│   ├── saucelabs.properties               → Capabilities de la app Sauce Labs
+│   ├── saucelabs.properties               → Capabilities de la app Sauce Labs (`noReset=false`)
 │   └── plantilla-nueva-app.properties.example → Plantilla para agregar una app nueva
 └── features/
     └── SauceLabs.feature
@@ -125,12 +125,22 @@ Esto ayuda a diagnosticar rápido en qué paso falló algo, sin depender
 
 ## 4. Feature disponible
 
-### `SauceLabs.feature` (`@SauceLabsLogin`, `@Smoke`)
-Login completo en la app de Sauce Labs (`standard_user` / `secret_sauce`),
-validación de que se llegó a la pantalla de productos, y cierre de la
-app — usando el step genérico de `AppConfigStepsDefs` para levantarla y
-cerrarla.
+### SauceLabs.feature (@RegresionTienda, @Carrito)
+Pruebas de regresión automatizadas sobre el flujo de compras mediante un Scenario Outline:
 
+@RegresionTienda @Carrito
+Scenario Outline: Validar la adición y actualización del carrito de compras
+Given estoy en la aplicación de SauceLabs
+And valido que carguen correctamente los productos en la galeria
+When agrego <UNIDADES> del siguiente producto "<PRODUCTO>"
+Then valido el carrito de compra actualice correctamente
+And cierro el aplicativo "com.saucelabs.mydemoapp.android"
+
+Examples:
+| PRODUCTO                  | UNIDADES |
+| Sauce Labs Backpack       | 1        |
+| Sauce Labs Bolt T-Shirt   | 1        |
+| Sauce Labs Bike Light     | 2        |
 ---
 
 ## 5. Requisitos

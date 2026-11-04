@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.nttdata.runners.CucumberTestSuite" time="158.962" tests="3" errors="1" skipped="0" failures="1" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab\target\test-classes;C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab\target\classes;C:\Users\INTICO ADMIN\.m2\repository\io\appium\java-client\10.1.1\java-client-10.1.1.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.52.0\selenium-api-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.52.0\selenium-remote-driver-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\guava\33.7.2-jre\guava-33.7.2-jre.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-api\1.67.0\opentelemetry-api-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-context\1.67.0\opentelemetry-context-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-common\1.67.0\opentelemetry-common-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.67.0\opentelemetry-exporter-logging-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.67.0\opentelemetry-sdk-common-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.67.0\opentelemetry-sdk-extension-autoconfigure-spi-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.67.0\opentelemetry-sdk-extension-autoconfigure-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.67.0\opentelemetry-sdk-trace-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.67.0\opentelemetry-sdk-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.67.0\opentelemetry-sdk-metrics-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.67.0\opentelemetry-sdk-logs-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\net\bytebuddy\byte-buddy\1.18.15\byte-buddy-1.18.15.jar;C:\Users\INTICO ADMIN\.m2\repository\org\jetbrains\annotations\26.1.0\annotations-26.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.52.0\selenium-http-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.52.0\selenium-json-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.52.0\selenium-manager-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.52.0\selenium-os-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.52.0\selenium-support-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\INTICO ADMIN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.43.0\selenium-java-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.43.0\selenium-chrome-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.43.0\selenium-chromium-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.43.0\selenium-devtools-v145-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.43.0\selenium-devtools-v146-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.43.0\selenium-devtools-v147-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.43.0\selenium-edge-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.43.0\selenium-firefox-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.43.0\selenium-ie-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.43.0\selenium-safari-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-java\7.34.4\cucumber-java-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-core\7.34.4\cucumber-core-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-gherkin\7.34.4\cucumber-gherkin-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.4\cucumber-gherkin-messages-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\messages-ndjson\0.3.4\messages-ndjson-0.3.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\datatable\7.34.4\datatable-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-plugin\7.34.4\cucumber-plugin-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\docstring\7.34.4\docstring-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-junit\7.34.4\cucumber-junit-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\INTICO ADMIN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\INTICO ADMIN\AppData\Local\Temp\surefire9622035774714272259\surefirebooter-20261104134249647_3.jar C:\Users\INTICO ADMIN\AppData\Local\Temp\surefire9622035774714272259 2026-11-04T13-42-49_303-jvmRun1 surefire-20261104134249647_1tmp surefire_0-20261104134249647_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab\target\test-classes;C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab\target\classes;C:\Users\INTICO ADMIN\.m2\repository\io\appium\java-client\10.1.1\java-client-10.1.1.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.52.0\selenium-api-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.52.0\selenium-remote-driver-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\guava\33.7.2-jre\guava-33.7.2-jre.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-api\1.67.0\opentelemetry-api-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-context\1.67.0\opentelemetry-context-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-common\1.67.0\opentelemetry-common-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.67.0\opentelemetry-exporter-logging-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.67.0\opentelemetry-sdk-common-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.67.0\opentelemetry-sdk-extension-autoconfigure-spi-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.67.0\opentelemetry-sdk-extension-autoconfigure-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.67.0\opentelemetry-sdk-trace-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.67.0\opentelemetry-sdk-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.67.0\opentelemetry-sdk-metrics-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.67.0\opentelemetry-sdk-logs-1.67.0.jar;C:\Users\INTICO ADMIN\.m2\repository\net\bytebuddy\byte-buddy\1.18.15\byte-buddy-1.18.15.jar;C:\Users\INTICO ADMIN\.m2\repository\org\jetbrains\annotations\26.1.0\annotations-26.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.52.0\selenium-http-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.52.0\selenium-json-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.52.0\selenium-manager-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.52.0\selenium-os-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.52.0\selenium-support-4.52.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\INTICO ADMIN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.43.0\selenium-java-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.43.0\selenium-chrome-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.43.0\selenium-chromium-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.43.0\selenium-devtools-v145-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.43.0\selenium-devtools-v146-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.43.0\selenium-devtools-v147-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.43.0\selenium-edge-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.43.0\selenium-firefox-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.43.0\selenium-ie-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.43.0\selenium-safari-driver-4.43.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-java\7.34.4\cucumber-java-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-core\7.34.4\cucumber-core-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-gherkin\7.34.4\cucumber-gherkin-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.4\cucumber-gherkin-messages-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\messages-ndjson\0.3.4\messages-ndjson-0.3.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\datatable\7.34.4\datatable-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-plugin\7.34.4\cucumber-plugin-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\docstring\7.34.4\docstring-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\INTICO ADMIN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\INTICO ADMIN\.m2\repository\io\cucumber\cucumber-junit\7.34.4\cucumber-junit-7.34.4.jar;C:\Users\INTICO ADMIN\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\INTICO ADMIN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\INTICO ADMIN"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\INTICO ADMIN\AppData\Local\Temp\surefire9622035774714272259\surefirebooter-20261104134249647_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
+    <property name="user.name" value="INTICO ADMIN"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\INTICO ADMIN\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\INTICO~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\AUTOMATIZACION MOVIL\QAInnovationLab"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-21.0.10\bin;C:\Users\lapto\Desktop\BOOTCAMP NTT DATA\apache-maven-3.10.0-bin\apache-maven-3.10.0\bin;C:\Users\lapto\AppData\Local\Android\Sdk\platform-tools;C:\Users\lapto\AppData\Local\Android\Sdk\emulator;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\nodejs\;C:\Users\INTICO ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.6.1\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.10+8-LTS-217"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="Validar la adición y actualización del carrito de compras #1" classname="Validación del carrito de compras en la tienda online" time="72.429">
+    <system-out><![CDATA[
+@RegresionTienda @Carrito
+Scenario Outline: Validar la adición y actualización del carrito de compras # src/test/resources/features/SauceLabs.feature:13
+[AppConfigSteps] Solicitando inicio de aplicacion (saucelabs.properties)
+[AppConfigScreen] Leyendo configuracion desde: saucelabs.properties
+[AppConfigScreen] Construyendo capabilities...
+[AppConfigScreen] Conectando a Appium Server en: http://127.0.0.1:4723/
+[AppConfigScreen] Sesion Appium creada correctamente. SessionId: 7dcc0770-2ea4-4514-a8a2-e2337f326368
+========================================
+[Hooks] Iniciando escenario: Validar la adición y actualización del carrito de compras
+========================================
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Aplicación iniciada
+
+        Embedding Aplicación iniciada [image/png 47106 bytes]
+
+  ✔ Given estoy en la aplicación de SauceLabs                               # com.nttdata.stepsdefinitions.TiendaStepDefs.estoyEnLaAplicacionDeSauceLabs()
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Galería de productos visible
+
+        Embedding Galería de productos visible [image/png 676446 bytes]
+
+  ✔ And valido que carguen correctamente los productos en la galeria        # com.nttdata.stepsdefinitions.TiendaStepDefs.validoQueCarguenCorrectamenteLosProductosEnLaGaleria()
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Producto agregado: Sauce Labs Backpack (1 und)
+
+        Embedding Producto agregado: Sauce Labs Backpack (1 und) [image/png 368130 bytes]
+
+  ✔ When agrego 1 del siguiente producto "Sauce Labs Backpack"              # com.nttdata.stepsdefinitions.TiendaStepDefs.agregoUnidadesDelSiguienteProducto(int,java.lang.String)
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Carrito validado correctamente
+
+        Embedding Carrito validado correctamente [image/png 216525 bytes]
+
+  ✔ Then valido el carrito de compra actualice correctamente                # com.nttdata.stepsdefinitions.TiendaStepDefs.validoElCarritoDeCompraActualiceCorrectamente()
+[AppConfigStepsDefs] Cerrando aplicativo: com.saucelabs.mydemoapp.android
+[AppConfigSteps] Solicitando cierre de aplicacion (com.saucelabs.mydemoapp.android)
+[AppConfigScreen] Cerrando aplicacion: com.saucelabs.mydemoapp.android
+[AppConfigScreen] Cerrando sesion Appium...
+[AppConfigScreen] Sesion Appium cerrada correctamente.
+  ✔ And cierro el aplicativo "com.saucelabs.mydemoapp.android"              # com.nttdata.stepsdefinitions.AppConfigStepsDefs.cierro_el_aplicativo(java.lang.String)
+[Hooks] Escenario 'Validar la adición y actualización del carrito de compras' finalizo: EXITOSO
+[Hooks] Advertencia al tomar evidencia final: [AppConfigScreen] El driver no ha sido inicializado. Debes llamar a iniciarAplicacion(...) antes de interactuar con la pantalla.
+]]></system-out>
+  </testcase>
+  <testcase name="Validar la adición y actualización del carrito de compras #2" classname="Validación del carrito de compras en la tienda online" time="30.124">
+    <failure message="El carrito no muestra la cantidad de producto esperada" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: El carrito no muestra la cantidad de producto esperada
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.nttdata.steps.TiendaSteps.validarCarrito(TiendaSteps.java:23)
+	at com.nttdata.stepsdefinitions.TiendaStepDefs.validoElCarritoDeCompraActualiceCorrectamente(TiendaStepDefs.java:46)
+	at ✽.valido el carrito de compra actualice correctamente(file:///C:/Users/lapto/Desktop/BOOTCAMP%20NTT%20DATA/AUTOMATIZACION%20MOVIL/QAInnovationLab/src/test/resources/features/SauceLabs.feature:8)
+]]></failure>
+    <system-out><![CDATA[
+@RegresionTienda @Carrito
+Scenario Outline: Validar la adición y actualización del carrito de compras # src/test/resources/features/SauceLabs.feature:14
+[AppConfigSteps] Solicitando inicio de aplicacion (saucelabs.properties)
+[AppConfigScreen] Leyendo configuracion desde: saucelabs.properties
+[AppConfigScreen] Construyendo capabilities...
+[AppConfigScreen] Conectando a Appium Server en: http://127.0.0.1:4723/
+[AppConfigScreen] Sesion Appium creada correctamente. SessionId: 4d7a896d-e3dd-46ac-9b19-74b8c6efcbf6
+========================================
+[Hooks] Iniciando escenario: Validar la adición y actualización del carrito de compras
+========================================
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Aplicación iniciada
+
+        Embedding Aplicación iniciada [image/png 47106 bytes]
+
+  ✔ Given estoy en la aplicación de SauceLabs                               # com.nttdata.stepsdefinitions.TiendaStepDefs.estoyEnLaAplicacionDeSauceLabs()
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Galería de productos visible
+
+        Embedding Galería de productos visible [image/png 676446 bytes]
+
+  ✔ And valido que carguen correctamente los productos en la galeria        # com.nttdata.stepsdefinitions.TiendaStepDefs.validoQueCarguenCorrectamenteLosProductosEnLaGaleria()
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Producto agregado: Sauce Labs Bolt T-Shirt (1 und)
+
+        Embedding Producto agregado: Sauce Labs Bolt T-Shirt (1 und) [image/png 231066 bytes]
+
+  ✔ When agrego 1 del siguiente producto "Sauce Labs Bolt T-Shirt"          # com.nttdata.stepsdefinitions.TiendaStepDefs.agregoUnidadesDelSiguienteProducto(int,java.lang.String)
+  ✘ Then valido el carrito de compra actualice correctamente                # com.nttdata.stepsdefinitions.TiendaStepDefs.validoElCarritoDeCompraActualiceCorrectamente()
+        java.lang.AssertionError: El carrito no muestra la cantidad de producto esperada
+        	at org.junit.Assert.fail(Assert.java:89)
+        	at org.junit.Assert.assertTrue(Assert.java:42)
+        	at com.nttdata.steps.TiendaSteps.validarCarrito(TiendaSteps.java:23)
+        	at com.nttdata.stepsdefinitions.TiendaStepDefs.validoElCarritoDeCompraActualiceCorrectamente(TiendaStepDefs.java:46)
+        	at ✽.valido el carrito de compra actualice correctamente(file:///C:/Users/lapto/Desktop/BOOTCAMP%20NTT%20DATA/AUTOMATIZACION%20MOVIL/QAInnovationLab/src/test/resources/features/SauceLabs.feature:8)
+  ↷ And cierro el aplicativo "com.saucelabs.mydemoapp.android"              # com.nttdata.stepsdefinitions.AppConfigStepsDefs.cierro_el_aplicativo(java.lang.String)
+[Hooks] Escenario 'Validar la adición y actualización del carrito de compras' finalizo: FALLIDO
+
+        Embedding Estado final (FALLO) [image/png 184065 bytes]
+
+Driver cerrado correctamente.
+]]></system-out>
+  </testcase>
+  <testcase name="Validar la adición y actualización del carrito de compras #3" classname="Validación del carrito de compras en la tienda online" time="54.574">
+    <error message="Expected condition failed: waiting for element found by AppiumBy.androidUIAutomator: new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId(&quot;com.saucelabs.mydemoapp.android:id/plusIV&quot;)); to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters..&#10;(tried for 5 seconds with 500 milliseconds interval)&#10;Build info: version: &apos;4.52.0&apos;, revision: &apos;5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:autoLaunch: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.and..., appPackage: com.saucelabs.mydemoapp.and..., autoGrantPermissions: true, autoLaunch: true, automationName: UiAutomator2, deviceName: Pixel_4, disableWindowAnimation: true, enforceAppInstall: false, forceAppLaunch: true, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 11, skipLogcatCapture: true, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:enforceAppInstall: false, appium:forceAppLaunch: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:skipLogcatCapture: true, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 0c00f3a4-d346-4a95-9cc8-0ad4e11be1a9" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element found by AppiumBy.androidUIAutomator: new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/plusIV")); to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters..
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:autoLaunch: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.and..., appPackage: com.saucelabs.mydemoapp.and..., autoGrantPermissions: true, autoLaunch: true, automationName: UiAutomator2, deviceName: Pixel_4, disableWindowAnimation: true, enforceAppInstall: false, forceAppLaunch: true, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 11, skipLogcatCapture: true, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:enforceAppInstall: false, appium:forceAppLaunch: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:skipLogcatCapture: true, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0c00f3a4-d346-4a95-9cc8-0ad4e11be1a9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.nttdata.screens.TiendaScreen.agregarUnidades(TiendaScreen.java:43)
+	at com.nttdata.steps.TiendaSteps.agregarProductoYUnidades(TiendaSteps.java:17)
+	at com.nttdata.stepsdefinitions.TiendaStepDefs.agregoUnidadesDelSiguienteProducto(TiendaStepDefs.java:40)
+	at ✽.agrego 2 del siguiente producto "Sauce Labs Bike Light"(file:///C:/Users/lapto/Desktop/BOOTCAMP%20NTT%20DATA/AUTOMATIZACION%20MOVIL/QAInnovationLab/src/test/resources/features/SauceLabs.feature:7)
+]]></error>
+    <system-out><![CDATA[
+@RegresionTienda @Carrito
+Scenario Outline: Validar la adición y actualización del carrito de compras # src/test/resources/features/SauceLabs.feature:15
+[AppConfigSteps] Solicitando inicio de aplicacion (saucelabs.properties)
+[AppConfigScreen] Leyendo configuracion desde: saucelabs.properties
+[AppConfigScreen] Construyendo capabilities...
+[AppConfigScreen] Conectando a Appium Server en: http://127.0.0.1:4723/
+[AppConfigScreen] Sesion Appium creada correctamente. SessionId: 0c00f3a4-d346-4a95-9cc8-0ad4e11be1a9
+========================================
+[Hooks] Iniciando escenario: Validar la adición y actualización del carrito de compras
+========================================
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Aplicación iniciada
+
+        Embedding Aplicación iniciada [image/png 47106 bytes]
+
+  ✔ Given estoy en la aplicación de SauceLabs                               # com.nttdata.stepsdefinitions.TiendaStepDefs.estoyEnLaAplicacionDeSauceLabs()
+[AppConfigScreen] Tomando screenshot...
+[ScreenshotAttacher] Adjuntando evidencia: Galería de productos visible
+
+        Embedding Galería de productos visible [image/png 676446 bytes]
+
+  ✔ And valido que carguen correctamente los productos en la galeria        # com.nttdata.stepsdefinitions.TiendaStepDefs.validoQueCarguenCorrectamenteLosProductosEnLaGaleria()
+  ✘ When agrego 2 del siguiente producto "Sauce Labs Bike Light"            # com.nttdata.stepsdefinitions.TiendaStepDefs.agregoUnidadesDelSiguienteProducto(int,java.lang.String)
+        org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by AppiumBy.androidUIAutomator: new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/plusIV")); to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters..
+        (tried for 5 seconds with 500 milliseconds interval)
+        Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: io.appium.java_client.android.AndroidDriver
+        Capabilities {appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:autoLaunch: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.and..., appPackage: com.saucelabs.mydemoapp.and..., autoGrantPermissions: true, autoLaunch: true, automationName: UiAutomator2, deviceName: Pixel_4, disableWindowAnimation: true, enforceAppInstall: false, forceAppLaunch: true, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 11, skipLogcatCapture: true, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:enforceAppInstall: false, appium:forceAppLaunch: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:skipLogcatCapture: true, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+        Session ID: 0c00f3a4-d346-4a95-9cc8-0ad4e11be1a9
+        	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+        	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+        	at com.nttdata.screens.TiendaScreen.agregarUnidades(TiendaScreen.java:43)
+        	at com.nttdata.steps.TiendaSteps.agregarProductoYUnidades(TiendaSteps.java:17)
+        	at com.nttdata.stepsdefinitions.TiendaStepDefs.agregoUnidadesDelSiguienteProducto(TiendaStepDefs.java:40)
+        	at ✽.agrego 2 del siguiente producto "Sauce Labs Bike Light"(file:///C:/Users/lapto/Desktop/BOOTCAMP%20NTT%20DATA/AUTOMATIZACION%20MOVIL/QAInnovationLab/src/test/resources/features/SauceLabs.feature:7)
+  ↷ Then valido el carrito de compra actualice correctamente                # com.nttdata.stepsdefinitions.TiendaStepDefs.validoElCarritoDeCompraActualiceCorrectamente()
+  ↷ And cierro el aplicativo "com.saucelabs.mydemoapp.android"              # com.nttdata.stepsdefinitions.AppConfigStepsDefs.cierro_el_aplicativo(java.lang.String)
+[Hooks] Escenario 'Validar la adición y actualización del carrito de compras' finalizo: FALLIDO
+
+        Embedding Estado final (FALLO) [image/png 589746 bytes]
+
+Driver cerrado correctamente.
+]]></system-out>
+  </testcase>
+</testsuite>
